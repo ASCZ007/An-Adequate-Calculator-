@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+
+  <section>
+    <div id="calculator">
+      <input id="display" type="text" value="" readonly />
+      <input id="memory" type="hidden" value="" />
+
+      <div class="keypad">
+        <button type="button" onclick="clearMe()">C</button>
+        <button type="button" onclick="switchSigns()">+/-</button>
+        <button type="button" onclick="percentMe()">%</button>
+        <button type="button" onclick="displayMe('/')">/</button>
+
+        <button type="button" onclick="displayMe('7')">7</button>
+        <button type="button" onclick="displayMe('8')">8</button>
+        <button type="button" onclick="displayMe('9')">9</button>
+        <button type="button" onclick="displayMe('*')">*</button>
+
+        <button type="button" onclick="displayMe('4')">4</button>
+        <button type="button" onclick="displayMe('5')">5</button>
+        <button type="button" onclick="displayMe('6')">6</button>
+        <button type="button" onclick="displayMe('-')">-</button>
+
+        <button type="button" onclick="displayMe('1')">1</button>
+        <button type="button" onclick="displayMe('2')">2</button>
+        <button type="button" onclick="displayMe('3')">3</button>
+        <button type="button" onclick="displayMe('+')">+</button>
+
+        <button type="button" onclick="rememberMe()">M</button>
+        <button type="button" onclick="displayMe('0')">0</button>
+        <button type="button" onclick="displayMe('.')">.</button>
+        <button type="button" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Programming Exercise 7
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
